@@ -1,6 +1,5 @@
 package com.softline.tests;
 
-import com.softline.tests.pages.NavigatorPage;
 import com.softline.tests.pages.StartPage;
 import org.testng.annotations.Test;
 

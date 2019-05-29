@@ -3,8 +3,8 @@
 <suite name="Softline">
 
     <test name="Smoke">
-        <classes>
-            <class name="com.softline.tests.StudentsPartTest"/>
+        <classes >
+            <class name="com.softline.tests.SoftLineTest"/>
         </classes>
     </test>
 </suite>

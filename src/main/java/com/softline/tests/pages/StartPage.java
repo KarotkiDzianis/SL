@@ -17,6 +17,9 @@ public class StartPage extends BasePage {
         @FindBy(className = "navigator")
         private WebElement linkNavigator;
 
+    /**
+     * This method checks availability element 'needle'.
+     */
         public boolean checkingNeedle() {
             try {
                 needle.isDisplayed();
@@ -27,6 +30,9 @@ public class StartPage extends BasePage {
             }
         }
 
+    /**
+     * This method redirects to the NavigatorPage.
+     */
         public NavigatorPage clickLinkNavigator() {
             linkNavigator.click();
             log.info("New page was opened");
