@@ -8,14 +8,14 @@ import org.openqa.selenium.support.FindBy;
 public class NavigatorPage extends BasePage {
     private static final Logger log = LogManager.getLogger();
 
-    @FindBy(xpath = "//*[@href='/link1/']")
+    @FindBy(xpath = "//div[@class='request-form container']//a[text()='Ссылка 1']")
     private WebElement link1;
 
-    @FindBy(xpath = "//*[@href='/link2/']")
+    @FindBy(xpath = "//div[@class='request-form container']//a[text()='Ссылка 2']")
     private WebElement link2;
 
-    @FindBy(xpath = "//*[@href='/link3/']")
-    private WebElement link3;
+    @FindBy(xpath = "//div[@class='request-form container']//a[text()='Ссылка N']")
+    private WebElement linkN;
 
     /**
      * This method returns name Link1.
@@ -54,21 +54,21 @@ public class NavigatorPage extends BasePage {
     }
 
     /**
-     * This method returns name Link3.
+     * This method returns name LinkN.
      */
-    public String getNamePage3() {
-        String nameLink1 = link3.getText();
-        log.info("Name link is " + link3.getText());
+    public String getNamePageN() {
+        String nameLink1 = linkN.getText();
+        log.info("Name link is " + linkN.getText());
         return nameLink1;
     }
 
     /**
-     * This method redirects to the Link3.
+     * This method redirects to the LinkN.
      */
-    public Link3Page openLink3Page() {
-        link3.click();
-        log.info("Name link is " + link3.getText() + " and new page was opened");
-        return new Link3Page();
+    public LinkNPage openLinkNPage() {
+        linkN.click();
+        log.info("Name link is " + linkN.getText() + " and new page was opened");
+        return new LinkNPage();
     }
 
 

@@ -11,10 +11,10 @@ public class StartPage extends BasePage {
 
         private static final Logger log = LogManager.getLogger();
 
-        @FindBy(xpath = "//*[@class='needle']")
+        @FindBy(xpath = "//div[@class='needle']")
         private WebElement needle;
 
-        @FindBy(className = "navigator")
+        @FindBy(xpath = "//a[@class='navigator']" )
         private WebElement linkNavigator;
 
     /**

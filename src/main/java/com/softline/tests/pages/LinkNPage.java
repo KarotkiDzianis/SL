@@ -1,6 +1,6 @@
 package com.softline.tests.pages;
 
-public class Link3Page extends BasePage {
+public class LinkNPage extends BasePage {
 
     /**
      * This method returns title Page Link3.

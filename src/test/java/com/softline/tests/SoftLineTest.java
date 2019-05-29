@@ -21,7 +21,7 @@ public class SoftLineTest extends BaseTest {
         startPage = new StartPage();
         String link1 = startPage.clickLinkNavigator().getNamePage1();
         String titleLink1 = startPage.clickLinkNavigator().openLink1Page().getTitle();
-        assertEquals(link1, titleLink1, " The title doesn't equal the name Link1");
+        assertEquals(link1, titleLink1, " The title not equals the name Link1");
     }
 
     @Test
@@ -29,15 +29,15 @@ public class SoftLineTest extends BaseTest {
         startPage = new StartPage();
         String link2 = startPage.clickLinkNavigator().getNamePage2();
         String titleLink2 = startPage.clickLinkNavigator().openLink2Page().getTitle();
-        assertEquals(link2, titleLink2, " The title doesn't equal the name Link1");
+        assertEquals(link2, titleLink2, " The title not equals the name Link2");
     }
 
     @Test
-    public void testLink3() {
+    public void testLinkN() {
         startPage = new StartPage();
-        String link3 = startPage.clickLinkNavigator().getNamePage3();
-        String titleLink3 = startPage.clickLinkNavigator().openLink3Page().getTitle();
-        assertEquals(link3, titleLink3, " The title doesn't equal the name Link1");
+        String linkN = startPage.clickLinkNavigator().getNamePageN();
+        String titleLinkN = startPage.clickLinkNavigator().openLinkNPage().getTitle();
+        assertEquals(linkN, titleLinkN, " The title not equals the name LinkN");
     }
 
 }
